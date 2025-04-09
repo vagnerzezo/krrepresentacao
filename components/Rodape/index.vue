@@ -8,7 +8,7 @@
      <!-- Redes Sociais -->
      <div class="flex justify-center gap-4 text-white text-xl">
        <a href="#" aria-label="WhatsApp">
-        <img src="/img/logo/whatsApp.svg" alt="KR Representações" class="mx-auto w-8" />
+        <!-- <img src="/img/logo/whatsApp.svg" alt="KR Representações" class="mx-auto w-8" /> -->
        </a>
        <a href="#" aria-label="Instagram">
         <img src="/img/logo/instagram.svg" alt="KR Representações" class="mx-auto w-8" />
