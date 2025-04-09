@@ -11,13 +11,13 @@
         <img src="/img/logo/whatsApp.svg" alt="KR Representações" class="mx-auto w-8" />
        </a>
        <a href="#" aria-label="Instagram">
-        <img src="/img/logo/Instagram.svg" alt="KR Representações" class="mx-auto w-8" />
+        <img src="/img/logo/instagram.svg" alt="KR Representações" class="mx-auto w-8" />
        </a>
        <a href="#" aria-label="Facebook">
-        <img src="/img/logo/Facebook.svg" alt="KR Representações" class="mx-auto w-8" />
+        <img src="/img/logo/facebook.svg" alt="KR Representações" class="mx-auto w-8" />
        </a>
        <a href="#" aria-label="LinkedIn">
-        <img src="/img/logo/LinkedIn.svg" alt="KR Representações" class="mx-auto w-8" />
+        <img src="/img/logo/linkedIn.svg" alt="KR Representações" class="mx-auto w-8" />
        </a>
      </div>
 
