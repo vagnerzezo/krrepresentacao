@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const navItems = [
  { label: 'HOME', to: '/' },
- { label: 'SOBRE', to: '/sobre' },
  { label: 'MARCAS', to: '/marcas' },
  { label: 'PRODUTOS', to: '/produtos' },
  { label: 'SHOWROOM', to: '/showroom' },

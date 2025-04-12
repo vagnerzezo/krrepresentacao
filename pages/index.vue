@@ -1,10 +1,6 @@
 <template>
- <div>
-  <Fullbanner/>
-  <About/>
-  <Brand/>
-  <Product/>
-  <Showroom/>
-  <Depoimento/>
- </div>
-</template>
+  <div>
+   <Fullbanner/>
+   <About/>
+  </div>
+ </template>
