@@ -1,75 +1,73 @@
-# Nuxt Minimal Starter
+# KR Representações
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Site institucional da **KR Representações**, empresa de gestão de marcas de moda que atua no Rio Grande do Sul desde 2019, com showroom em São Leopoldo/RS.
 
-## Setup
+O site apresenta a empresa, as marcas representadas (QIX, West Coast, Orange, Tropical Brasil), produtos, o showroom e depoimentos de parceiros. O pedido de catálogo é feito pelo WhatsApp.
 
-Make sure to install dependencies:
+## Tecnologias
+
+- [Nuxt 3](https://nuxt.com/) (Vue 3 + Vue Router)
+- [Tailwind CSS 4](https://tailwindcss.com/) via `@tailwindcss/vite`
+- TypeScript
+
+## Requisitos
+
+- Node.js 18 ou superior (recomendado: 20+)
+- npm
+
+## Como rodar
 
 ```bash
-# npm
+# instalar dependências
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# servidor de desenvolvimento em http://localhost:3000
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Scripts
 
-Build the application for production:
+| Comando            | Descrição                                          |
+| ------------------ | -------------------------------------------------- |
+| `npm run dev`      | Inicia o servidor de desenvolvimento               |
+| `npm run build`    | Gera o build de produção (SSR) em `.output/`       |
+| `npm run generate` | Gera o site estático (pré-renderizado)             |
+| `npm run preview`  | Serve localmente o build de produção               |
 
-```bash
-# npm
-npm run build
+## Estrutura
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+├── app.vue              # Layout raiz: Navbar fixa, página atual e Rodapé
+├── assets/css/main.css  # CSS global (Tailwind)
+├── components/
+│   ├── About/           # Seção "Sobre nós"
+│   ├── Brand/           # Marcas representadas + botão de catálogo
+│   ├── Depoimento/      # Depoimentos de parceiros
+│   ├── Fullbanner/      # Banner principal da home
+│   ├── Navbar/          # Menu de navegação (com menu hambúrguer no mobile)
+│   ├── Product/         # Vitrine de produtos
+│   ├── Rodape/          # Rodapé com contato e endereço
+│   └── Showroom/        # Galeria do showroom
+├── pages/               # Rotas (geradas automaticamente pelo Nuxt)
+│   ├── index.vue        # /             → Fullbanner + Sobre nós
+│   ├── marcas.vue       # /marcas
+│   ├── produtos.vue     # /produtos
+│   ├── showroom.vue     # /showroom
+│   └── depoimentos.vue  # /depoimentos
+├── public/img/          # Imagens, logos das marcas e fotos do showroom
+└── nuxt.config.ts       # Configuração do Nuxt e do Tailwind
 ```
 
-Locally preview production build:
+Os componentes em `components/` são importados automaticamente pelo Nuxt; basta usar `<Brand />`, `<Rodape />` etc. nas páginas.
 
-```bash
-# npm
-npm run preview
+## Deploy
 
-# pnpm
-pnpm preview
+`npm run generate` gera um site estático em `.output/public`, que pode ser publicado em qualquer hospedagem estática (Netlify, Vercel, GitHub Pages, S3 etc.). Para rodar com SSR, use `npm run build` e inicie com `node .output/server/index.mjs`.
 
-# yarn
-yarn preview
+Mais detalhes na [documentação de deploy do Nuxt](https://nuxt.com/docs/getting-started/deployment).
 
-# bun
-bun run preview
-```
+## Contato
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **Telefone:** (51) 98148-1121
+- **E-mail:** comercial@krrepresentacao.com.br
+- **Endereço:** Rua Medianeira, 322 - Cristo Rei - São Leopoldo/RS - CEP 93020-440
